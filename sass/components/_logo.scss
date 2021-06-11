@@ -1,0 +1,12 @@
+.logo {
+  display: block;
+  font-family: $logo-font;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $primary-black-color;
+
+  .logo__accent {
+    color: $accent-color;
+  }
+}

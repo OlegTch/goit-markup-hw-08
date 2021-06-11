@@ -1,0 +1,104 @@
+//  БАЗОВАЯ КНОПКА
+
+.button {
+  font-family: inherit; // кнопка унаследует свойства
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  border: 0; // Альтернатива рамка прозрачная border: 1px; solid: transparent
+
+  background-color: $accent-color;
+  color: $primary-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-accent-color;
+  }
+}
+// КНОПКА HERO
+
+.button--primery {
+  padding: 10px 32px;
+}
+
+// КНОПКИ ПОРТФОЛИО
+
+.button--secondary {
+  padding: 6px 22px;
+  min-width: 73px;
+
+  font-family: inherit;
+  background-color: $secondary-bg-color;
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// КНОПКИ ПОРТФОЛИО
+
+// .button.secondary {
+//   padding: 6px 22px;
+//   min-width: 73px;
+
+//   font-family: inherit;
+//   background-color: $secondary-bg-color;
+//   color: $title-text-color;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.62;
+// }
+
+// .button.secondary:hover,
+// .button.secondary:focus {
+//   background-color: $accent-color;
+//   color: $primary-white-color;
+//   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//     0px 2px 2px rgba(0, 0, 0, 0.12);
+// }
+
+// кнопка в подвале
+// .form-footer-thumb .form-footer-button {
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+
+//   margin-left: 12px;
+//   margin-right: 0;
+//   padding: 10px 28px 10px 29px;
+// }
+
+// Кнопка в модальном окне
+// .form__button--primery {
+//   display: block;
+//   margin: 0 auto;
+//   align-items: center;
+//   padding: 10px 55px;
+
+//   transition-property: color, box-shadow;
+//   transition-duration: $duration;
+//   transition-timing-function: $timing-function;
+// }
+
+// .form__button--primery:hover,
+// .form__button--primery:focus {
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+// }

@@ -1,0 +1,36 @@
+// СЕКЦИЯ ОСОБЕННОСТИ
+
+.feature {
+  padding-bottom: 47px;
+
+  .feature__item {
+    //   flex-basis: calc(100% / 4 - $image-set-gap);
+    flex-basis: calc(100% / 4 - 30px);
+  }
+
+  .feature__thumb-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 270px;
+    background-color: $secondary-bg-color;
+  }
+
+  .feature__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  .feature__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

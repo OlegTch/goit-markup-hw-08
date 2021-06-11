@@ -1,0 +1,27 @@
+// СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ
+
+.box {
+  padding-top: 47px;
+
+  .box__item {
+    position: relative;
+    flex-basis: calc(100% / 3 - 30px);
+    // flex-basis: calc(100% / 3 - $image-set-gap);
+  }
+
+  .box__subtitle {
+    position: absolute;
+    width: 100%;
+    padding: 27px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: $box_bg-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}

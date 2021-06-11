@@ -1,0 +1,45 @@
+.contacts {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+
+  .contacts__item {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-right: $image-set-gap;
+    }
+  }
+
+  .contacts__link {
+    display: flex;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $primary-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: currentColor; // fill: var(--accent-color);
+    }
+  }
+
+  // Иконки в header
+  .contacts__icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

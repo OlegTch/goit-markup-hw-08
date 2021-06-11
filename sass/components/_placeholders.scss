@@ -1,0 +1,61 @@
+// Сброс настроек
+//  %имя {};
+//  в ДЗ @mixin displey-flex
+body {
+  margin: 0;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $primary-font;
+  letter-spacing: 0.03em;
+}
+
+// заголовки и параграфы
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// списки
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+// элементы списка
+.item {
+  list-style: none;
+}
+
+// ссылки
+.link {
+  text-decoration: none;
+}
+
+// картики
+.image {
+  display: block;
+  max-width: 100%;
+}
+
+// позиционируем список
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-bottom: calc(-1 * 30px);
+  // margin-left: calc(-1 * $image-set-gap);
+  // margin-bottom: calc(-1 * $image-set-gap);
+}
+
+.list .item {
+  margin-left: $image-set-gap;
+  margin-bottom: $image-set-gap;
+}

@@ -1,0 +1,40 @@
+// СПИСОК СОЦИАЛЬНЫХ СЕТЕЙ В КОМАНДЕ И ПОДВАЛЕ
+
+.social {
+  margin: 0;
+  justify-content: center;
+}
+.social__item.item {
+  margin-right: 10px;
+  margin-left: 0;
+  margin-bottom: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: $icon-color;
+  border-radius: 50%;
+
+  transition-property: fill, background-color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
+
+.social__link--footer {
+  fill: $primary-white-color;
+  background: $social-footer-bg-color;
+}

@@ -1,0 +1,118 @@
+// ПОРТФОЛИО
+
+// .portfolio {
+// КНОПКИ В ПОРТФОЛИО
+.portfolio__button-list {
+  margin-left: 0;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.portfolio__button-item.item {
+  margin-right: 8px;
+  margin-left: 0;
+  margin-bottom: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// РАБОТЫ В ПОРТФОЛИО
+.portfolio__item {
+  flex-basis: calc(100% / 3 - 30px);
+  // flex-basis: calc(100% / 3 - $image-set-gap);
+
+  // плавная тень на портфолио
+  transition-property: box-shadow;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
+
+.portfolio__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio__image-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+//  добавление скрытого фона
+
+.portfolio__overlay {
+  /* display: inline-block; */
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $accent-color;
+  opacity: 0; /*временно, для удобства работы*/
+  transform: translateY(100%);
+  /* transition: transform 250ms var(--timing-function); */
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+
+  .portfolio__link:hover &,
+  .portfolio__link:focus & {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+//  добавление скрытого текста
+
+.portfolio__text--hidden {
+  /* display: inline-block; */
+  position: absolute;
+  /* justify-content: center;
+  align-items: center; */
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  /* margin: auto; */
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $primary-white-color;
+
+  .portfolio__link:hover &,
+  .portfolio__link:focus & {
+    opacity: 1;
+  }
+}
+
+// Под картинкой
+.portfolio__title-thumb {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.portfolio__title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio__text--primary {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.88;
+  color: $primary-text-color;
+}
+// }
