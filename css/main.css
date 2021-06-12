@@ -64,12 +64,17 @@ ol {
 }
 
 .container {
-  width: 1200px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .header {
@@ -904,5 +909,15 @@ ol {
 
 .form__button--primery:hover, .form__button--primery:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container.example__container {
+  background-color: tomato;
+}
+
+@media (min-width: 768px) {
+  .container.example__container {
+    background-color: orange;
+  }
 }
 /*# sourceMappingURL=main.css.map */

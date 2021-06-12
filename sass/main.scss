@@ -1,32 +1,32 @@
 // UTILS
 
-@import "./utils/variables";
-@import "./utils/visually-hidden";
+@import './utils/variables';
+@import './utils/visually-hidden';
 
 // COMPONENTS
-@import "./components/placeholders";
+@import './components/placeholders';
 // @import "./base/normalize";
-@import "./components/container";
-@import "./components/header";
-@import "./components/logo";
-@import "./components/nav";
-@import "./components/contacts";
-@import "./components/hero";
-@import "./components/button";
-@import "./components/section";
+@import './components/container';
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/contacts';
+@import './components/hero';
+@import './components/button';
+@import './components/section';
 
-@import "./components/section-feature";
-@import "./components/section-box";
-@import "./components/section-team";
-@import "./components/section-customer";
-@import "./components/section-portfolio";
+@import './components/section-feature';
+@import './components/section-box';
+@import './components/section-team';
+@import './components/section-customer';
+@import './components/section-portfolio';
 
-@import "./components/footer";
-@import "./components/social-link";
+@import './components/footer';
+@import './components/social-link';
 
-@import "./components/backdrop";
-@import "./components/modal-window";
-@import "./components/modal-form";
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
 
 // EXAMPLE
-@import "../example/example"; // примеры
+@import './example/example'; // примеры

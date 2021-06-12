@@ -24,7 +24,7 @@
         "components/_backdrop.scss",
         "components/_modal-window.scss",
         "components/_modal-form.scss",
-        "../example/_example.scss"
+        "example/_example.scss"
     ],
     "names": [],
     "file": "main.css"
