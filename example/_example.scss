@@ -1,0 +1,11 @@
+.container.example__container {
+  background-color: tomato;
+
+  @media (min-width: 768px) {
+    background-color: orange;
+  }
+}
+
+// mobile
+// tablet  (min-width: 480px)
+// desktop  (min-width: 768px max-width: 1200px)
