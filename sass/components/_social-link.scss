@@ -1,17 +1,16 @@
 // СПИСОК СОЦИАЛЬНЫХ СЕТЕЙ В КОМАНДЕ И ПОДВАЛЕ
 
 .social {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-left: calc(-1 * 10px);
+  margin-bottom: calc(-1 * 10px);
 }
 .social__item.item {
-  margin-right: 10px;
-  margin-left: 0;
-  margin-bottom: 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  margin-left: 10px;
+  margin-bottom: 10px;
+  // flex-basis: calc((100% - 4 * 10px) / 4);
 }
 
 .social__link {

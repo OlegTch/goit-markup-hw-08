@@ -6,16 +6,50 @@
   .footer__container {
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    /* align-content: baseline;  */
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      // justify-content: flex-end;
+      justify-content: space-between;
+      /* align-content: baseline;  */
+      align-items: baseline;
+      text-align: left;
+    }
+  }
+
+  .footer__tablet-thumb {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      /* align-content: baseline;  */
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+      // justify-content: flex-start;
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__address-thumb {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   // АДРЕС ПОДВАЛА
   .footer__logo {
     margin-bottom: 20px;
-    margin-right: 0;
     color: $primary-white-color;
   }
 
@@ -27,7 +61,10 @@
 
   .footer__item {
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+      }
     }
   }
 
@@ -46,7 +83,11 @@
 
   .footer__link--primary {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+
     color: $primary-white-color;
   }
 
@@ -68,9 +109,26 @@
   }
 
   // ФОРМА ПОДВАЛА
+  // .footer__form {
+  //   @media screen and (min-width: 1200px) {
+  //     width: 50%;
+  //   }
+  // }
+
   .footer__form-thumb {
-    display: flex;
-    justify-content: flex-end;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .footer__form-field {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      // align-self: flex-end;
+      margin-bottom: 0;
+    }
   }
 
   .footer__form-input {
@@ -79,7 +137,15 @@
     margin: 0;
     padding: 15px 16px;
     background-color: inherit;
-    width: 358px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
 
     font-size: 16px;
     line-height: 1.25;
@@ -94,7 +160,7 @@
     transition-duration: $duration;
     transition-timing-function: $timing-function;
 
-    // .footer-form-field:hover .form-footer-input,
+    // .footer-form-field:hover &
     &:focus {
       border: 1px solid $accent-color;
       outline: none;
@@ -105,9 +171,12 @@
     display: flex;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
 
-    margin-left: 12px;
-    margin-right: 0;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+      margin-right: 0;
+    }
     padding: 10px 28px 10px 29px;
 
     // font-weight: 700;

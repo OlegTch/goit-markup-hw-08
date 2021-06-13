@@ -1,6 +1,5 @@
 // Сброс настроек
-//  %имя {};
-//  в ДЗ @mixin displey-flex
+
 body {
   margin: 0;
   background-color: $primary-white-color;
@@ -46,16 +45,16 @@ ol {
 }
 
 // позиционируем список
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * 30px);
-  margin-bottom: calc(-1 * 30px);
-  // margin-left: calc(-1 * $image-set-gap);
-  // margin-bottom: calc(-1 * $image-set-gap);
-}
+// .list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-left: calc(-1 * 30px);
+//   margin-bottom: calc(-1 * 30px);
+//   // margin-left: calc(-1 * $image-set-gap);
+//   // margin-bottom: calc(-1 * $image-set-gap);
+// }
 
-.list .item {
-  margin-left: $image-set-gap;
-  margin-bottom: $image-set-gap;
-}
+// .list .item {
+//   margin-left: $image-set-gap;
+//   margin-bottom: $image-set-gap;
+// }

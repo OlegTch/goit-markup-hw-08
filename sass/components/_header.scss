@@ -1,18 +1,21 @@
 .header {
+  position: relative;
   border-bottom: 1px solid $header-border-color;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// .header__container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-}
+// .header__nav {
+//   display: flex;
+//   align-items: center;
+// }
 
-.header__logo {
-  margin-right: 93px;
-}
+// .header__logo {
+//   margin-right: 93px;
+// }
+
+// кнопка отрытия меню
