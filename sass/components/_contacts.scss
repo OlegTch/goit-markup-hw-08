@@ -1,33 +1,77 @@
 .contacts {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 24px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
 
   .contacts__item {
     list-style: none;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 64px;
+    }
 
-    &:not(:last-child) {
-      margin-right: $image-set-gap;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .contacts__item--tel {
+    margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
     }
   }
 
   .contacts__link {
     display: flex;
+    // margin-bottom: 64px;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
 
     color: $primary-text-color;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     transition-property: color;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      font-size: 12px;
+      line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      font-size: 14px;
+      line-height: 1.14;
+    }
 
     &:hover,
     &:focus {
@@ -36,10 +80,43 @@
     }
   }
 
+  .contacts__link--tel {
+    @media screen and (max-width: 767px) {
+      // margin-bottom: 32px;
+      font-size: 34px;
+      color: $accent-color;
+    }
+  }
+
   // Иконки в header
   .contacts__icon {
-    display: inline-block;
-    margin-right: 10px;
-    fill: currentColor;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin-right: 10px;
+      fill: currentColor;
+    }
+  }
+}
+
+.mobile-social {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .mobile-social__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    .mobile-social__link {
+      color: $accent-color;
+    }
   }
 }

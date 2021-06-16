@@ -2,17 +2,6 @@
   position: relative;
 }
 
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 .header__button {
   display: inline-flex;
   //   display: block;
@@ -54,7 +43,7 @@
 .header__mobile-thumb {
   background-color: inherit;
   padding: 15px;
-  text-align: center;
+  // text-align: center;
   font-size: 20px;
 
   @media screen and (max-width: 767px) {
@@ -75,11 +64,16 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
   }
 }
 
-.site-nav,
-.contacts {
-  height: 40px;
-  width: 50px;
-}
+// .site-nav,
+// .contacts {
+//   height: 40px;
+//   width: 50px;
+// }

@@ -1,8 +1,9 @@
 .form {
   /* width: 528px; */
-  margin-left: 41px;
-  margin-right: 39px;
-  margin-bottom: 40px;
+  padding-top: 2px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 .form__title {
@@ -150,7 +151,7 @@
     /* $primary-white-color; */
     fill: $primary-white-color;
     background-color: $accent-color;
-    background-image: url("../images/icons.svg#icon-check");
+    background-image: url('../images/icons.svg#icon-check');
     background-size: contain;
     background-origin: border-box;
     border: none;
