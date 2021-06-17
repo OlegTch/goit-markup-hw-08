@@ -19,45 +19,86 @@
 
         <!-- Верхняя линия -->
 
-        <header class="header">
-            <div class="container header__container">
-                <nav class="header__nav">
-                    <a class="logo header__logo" href="./index.html" lang="en">
-                        <span class="logo__accent">Web</span>Studio
-                    </a>
-                    <ul class="site-nav">
-                        <li class="item site-nav__item">
+<header class="header">
+    <div class="container header__container">
+        <nav class="header__nav">
+            <a class="logo header__logo" href="./index.html" lang="en">
+                <span class="logo__accent">Web</span>Studio
+            </a>
+            <button type="button" class="header__button header__button--opening" aria-expanded="false"
+                aria-controls="header__mobile-thumb" data-menu-button>
+                <svg class="header__icon" width="40px" height="40px" aria-label="Открываем мобильное меню">
+                    <use class="" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <!-- </nav>     -->
+            <div class="header__mobile-thumb" id="header__mobile-thumb" data-menu>
+                <!-- МЕНЮ     -->
+                <!-- <nav class="header__nav"> -->
+                <button type="button" class="header__button header__button--closening" aria-expanded="false"
+                    aria-controls="header__mobile-thumb" data-menu-button-close>
+                    <svg class="header__icon" width="40px" height="40px" aria-label="Закрываем мобильное меню">
+                        <use class="" href="./images/icons.svg#icon-close-header"></use>
+                    </svg>
+                </button>
+                <ul class="site-nav">
+                    <li class="item site-nav__item">
+                        <div class="site-nav__thumb">
                             <a href="./index.html" lang="en" class="site-nav__link">Студия</a>
-                        </li>
-                        <li class="item site-nav__item">
-                            <div class="site-nav__thumb">
-                                <a href="./portfolio.html" lang="en" class="site-nav__link site-nav__link--current">Портфолио</a>
-                            </div>
-                        </li>
-                        <li class="item site-nav__item">
-                            <a href="" class="site-nav__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-
+                        </div>
+                    </li>
+                    <li class="item site-nav__item">
+                        <a href="./portfolio.html" lang="en" class="site-nav__link site-nav__link--current">Портфолио</a>
+                    </li>
+                    <li class="item site-nav__item">
+                        <a href="" class="site-nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <!-- </nav> -->
                 <ul class="contacts">
                     <li class="item contacts__item" lang="en">
                         <a href="mailto:info@devstudio.com" class="contacts__link">
-                            <svg class="contacts__icon" width="16px" height="16px">
+                            <svg class="contacts__icon contacts__icon--email">
                                 <use href="./images/icons.svg#icon-envelope"></use>
                             </svg>info@devstudio.com
                         </a>
                     </li>
-                    <li class="item contacts__item">
-                        <a href="tel:+380961111111" class="contacts__link">
-                            <svg class="contacts__icon" width="10px" height="16px">
+                    <li class="item contacts__item contacts__item--tel">
+                        <a href="tel:+380961111111" class="contacts__link contacts__link--tel">
+                            <svg class="contacts__icon contacts__icon--tel">
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>+38 096 111 11 11
                         </a>
                     </li>
                 </ul>
+
+                <ul class="list mobile-social">
+                    <li class="item mobile-social__item">
+                        <a class="link mobile-social__link" href="">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="item mobile-social__item">
+                        <a class="link mobile-social__link" href="">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="item mobile-social__item">
+                        <a class="link mobile-social__link" href="">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="item mobile-social__item">
+                        <a class="link mobile-social__link" href="">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </nav>
+        <!-- </div> -->
+    </div>
+</header>
 
         <!--Основной текст, уникальный контент-->
 
@@ -116,7 +157,7 @@
                                                 src="./images/project/project-1-mobile.jpg" alt="Постер с двумя баскетболистами" />
                                         </picture>                                           
                                         <div class="portfolio__overlay">                                            
-                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама</p>
+                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама. Тут могло быть очень много Вашей рекламы. Это место настолько большое, что его может занять целый рекламный блок. </p>
                                         </div>                                        
                                     </div>
                                     <div class="portfolio__title-thumb">
@@ -142,7 +183,7 @@
                                                 src="./images/project/project-3-mobile.jpg" alt="Иконка ресторана с изображением рыбы" />
                                         </picture>                                        
                                         <div class="portfolio__overlay">                                            
-                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама</p>
+                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама. Тут могло быть очень много Вашей рекламы. Это место настолько большое, что его может занять целый рекламный блок. </p>
                                         </div>
                                     </div>
                                     <div class="portfolio__title-thumb">
@@ -168,7 +209,7 @@
                                                 src="./images/project/project-4-mobile.jpg" alt="Наушники" />
                                         </picture>                                        
                                         <div class="portfolio__overlay">                                            
-                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама</p>
+                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама. Тут могло быть очень много Вашей рекламы. Это место настолько большое, что его может занять целый рекламный блок. </p>
                                         </div>
                                     </div>
                                     <div class="portfolio__title-thumb">
@@ -194,7 +235,7 @@
                                                 src="./images/project/project-5-mobile.jpg" alt="Две коробки" />
                                         </picture>                                        
                                         <div class="portfolio__overlay">                                            
-                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама</p>
+                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама. Тут могло быть очень много Вашей рекламы. Это место настолько большое, что его может занять целый рекламный блок. </p>
                                         </div>
                                     </div>
                                     <div class="portfolio__title-thumb">
@@ -220,7 +261,7 @@
                                                 src="./images/project/project-6-mobile.jpg" alt="Монитор с открытым сайтом Inspiration has no Borders" />
                                         </picture>                                        
                                         <div class="portfolio__overlay">                                            
-                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама</p>
+                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама. Тут могло быть очень много Вашей рекламы. Это место настолько большое, что его может занять целый рекламный блок. </p>
                                         </div>
                                     </div>
                                     <div class="portfolio__title-thumb">
@@ -246,7 +287,7 @@
                                                 src="./images/project/project-7-mobile.jpg" alt="Раскрытая книга" />
                                         </picture>                                         
                                         <div class="portfolio__overlay">                                            
-                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама</p>
+                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама. Тут могло быть очень много Вашей рекламы. Это место настолько большое, что его может занять целый рекламный блок. </p>
                                         </div>
                                     </div>
                                     <div class="portfolio__title-thumb">
@@ -272,7 +313,7 @@
                                             src="./images/project/project-8-mobile.jpg" alt="Бирка с названием проекта" />
                                         </picture>                                        
                                         <div class="portfolio__overlay">                                            
-                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама</p>
+                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама. Тут могло быть очень много Вашей рекламы. Это место настолько большое, что его может занять целый рекламный блок. </p>
                                         </div>
                                     </div>
                                     <div class="portfolio__title-thumb">
@@ -298,7 +339,7 @@
                                                 src="./images/project/project-9-mobile.jpg" alt="Ноутбук с открытым приложением Growing Business" />
                                         </picture>                                        
                                         <div class="portfolio__overlay">                                            
-                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама</p>
+                                            <p class="portfolio__text--hidden">Тут могла быть Ваша реклама. Тут могло быть очень много Вашей рекламы. Это место настолько большое, что его может занять целый рекламный блок. </p>
                                         </div>
                                     </div>
                                     <div class="portfolio__title-thumb">
@@ -392,6 +433,7 @@
             </div>
         </footer>
 
+        <script src="./js/mobile-menu.js"></script>
     </body>
 
 </html>

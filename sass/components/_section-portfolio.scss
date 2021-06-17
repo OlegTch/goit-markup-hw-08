@@ -52,7 +52,6 @@
   }
 }
 
-//  height:100%, display:flex, и у дива flex-grow:1;
 .portfolio__link {
   display: flex;
   flex-direction: column;
@@ -65,21 +64,15 @@
   }
 }
 
-// .portfolio__item-thumb {
-//   flex-grow: 1;
-// }
-
 .portfolio__image-thumb {
   position: relative;
   overflow: hidden;
-  flex-grow: 1;
 }
 
 //  добавление скрытого фона
 
 .portfolio__overlay {
   position: absolute;
-
   top: 0;
   left: 0;
   width: 100%;
@@ -116,6 +109,16 @@
   line-height: 1.56;
   color: $primary-white-color;
 
+  // для вмещения текста на очень узких экранах
+  @media screen and (max-width: 440px) {
+    padding: 24px;
+  }
+
+  @media screen and (max-width: 396px) {
+    font-size: 14px;
+    // font-size: calc(4px + 12 * (100vw / 480));
+  }
+
   .portfolio__link:hover &,
   .portfolio__link:focus & {
     opacity: 1;
@@ -124,6 +127,8 @@
 
 // Под картинкой
 .portfolio__title-thumb {
+  flex-grow: 1;
+
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
