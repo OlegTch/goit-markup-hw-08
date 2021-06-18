@@ -1194,7 +1194,7 @@ ol {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     max-width: 450px;
@@ -1205,7 +1205,7 @@ ol {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 581px;
+    max-width: 528px;
     /* transform: scale(1); перебивает позицианирование transform: translate(-50%, -50%), писать в одном transform */
   }
 }
